@@ -11,7 +11,6 @@ public class GoogleHomePage extends BasePage{
 
     public GoogleHomePage(WebDriver driver, WebDriverWait wait){
         super(driver, wait);
-        wait = new WebDriverWait(driver, 10);
         PageFactory.initElements(driver, this);
     }
 

@@ -11,7 +11,7 @@ import java.util.List;
 
 public class GoogleResultsPage extends BasePage{
 
-    @FindBy(xpath = "//*[@id='rso']/div[@class='g']/div/div/div[1]/a") ////*[@id="rso"]/div[@class='g']/div/div/div[1]/a
+    @FindBy(xpath = "//*[@id='rso']/div[@class='g']/div/div/div[1]/a")
     List<WebElement> resultsLinks;
 
     public GoogleResultsPage(WebDriver driver, WebDriverWait wait){
