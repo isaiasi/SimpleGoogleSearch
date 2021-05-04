@@ -20,7 +20,7 @@ public class GoogleResultsPage extends BasePage{
     }
 
     public void getResultsNumber(){
-        System.out.println("The number of interactable result links is: "+ resultsLinks.size());
+        System.out.println("\n\nThe number of interactable result links is: "+ resultsLinks.size());
     }
 
     public void clickSecondResult(){
@@ -28,6 +28,6 @@ public class GoogleResultsPage extends BasePage{
         Actions act = new Actions(driver);
         act.moveToElement(secondResult).perform();
         secondResult.click();
-        System.out.println("Second result page's title is:\n " + driver.getTitle());
+        System.out.println("Second result page's title is:\n " + driver.getTitle() + "\n\n");
     }
 }
